@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1 style="text-align:center;">VLSI</h1>
+<div style="padding:50px;">
+
+</div>
+{% for v in video %}
+<div style="text-align:center; background-color: black;">
+
+<video src="{{v.video.url}}" controls >
+
+</video>
+</div>
+<h4 style="text-align:center;">{{v}}</h4>
+  {% endfor %}
+  </body>
+</html>
